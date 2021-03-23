@@ -13,4 +13,8 @@ defmodule Ex1Test do
   test "return the index of the first two elements added together is equal to a target" do
     assert Ex1.get_two_sum_index([1, 5, 0, 14, 10, 9], 19) == [1, 3]
   end
+
+  test "return :not_found when there is no sum equal to a target" do
+    assert Ex1.get_two_sum_index([1, 5, 0, 8, 10, 3], 19) == :not_found
+  end
 end

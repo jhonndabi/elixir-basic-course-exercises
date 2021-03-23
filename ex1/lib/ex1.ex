@@ -20,6 +20,8 @@ defmodule Ex1 do
     get_two_sum_index(integers_list, integers_list, target)
   end
 
+  defp get_two_sum_index(_original_list, [], _target), do: :not_found
+
   defp get_two_sum_index(original_list, integers_list, target) do
     [head | tail] = integers_list
 
