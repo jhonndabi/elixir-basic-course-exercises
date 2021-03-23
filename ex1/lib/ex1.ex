@@ -6,7 +6,8 @@ defmodule Ex1 do
   %{"turma" => 1, "de" => 2, "elixir" => 3, "formacao" => 1}
   """
   def get_words_occurrence(sentence) do
-    String.split(sentence, " ")
+    sentence
+    |> String.split()
     |> Enum.frequencies()
   end
 
